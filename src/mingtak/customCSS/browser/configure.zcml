@@ -18,4 +18,12 @@
       directory="static"
       />
 
+<!-- configlet -->
+  <browser:page
+    name="cssControlPanel"
+    for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+    permission="cmf.ManagePortal"
+    class=".configlet.CSSControlPanelView"
+    />
+
 </configure>

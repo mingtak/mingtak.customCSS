@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<object
+    name="portal_controlpanel"
+    xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+    i18n:domain="mingtak.customCSS">
+
+    <configlet
+        title="Custom CSS"
+        action_id="mingtak.customCSS.ICSSControlPanel"
+        appId="mingtak.customCSS"
+        category="Products"
+        condition_expr=""
+        url_expr="string:${portal_url}/@@cssControlPanel"
+        icon_expr="string:/favicon.ico"
+        visible="True"
+        i18n:attributes="title">
+            <permission>Manage portal</permission>
+    </configlet>
+
+</object>
+
