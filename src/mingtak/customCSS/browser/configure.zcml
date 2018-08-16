@@ -18,6 +18,15 @@
       directory="static"
       />
 
+<!-- Frontend's custom.css -->
+  <browser:page
+      name="custom_css"
+      for="*"
+      class=".css.CustomCSS"
+      layer="mingtak.customCSS.interfaces.IMingtakCustomcssLayer"
+      permission="cmf.ManagePortal"
+      />
+
 <!-- configlet -->
   <browser:page
     name="cssControlPanel"
