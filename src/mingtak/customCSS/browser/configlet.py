@@ -11,7 +11,12 @@ from plone.directives import form as Form
 class ICSSControlPanel(Form.Schema):
 
     filePath = schema.TextLine(
-        title=_(u'Fill File Path'),
+        title=_(u'Fill File Path for custom_css'),
+        required=True,
+    )
+
+    backendCSS = schema.TextLine(
+        title=_(u'Fill File Path for backend_css'),
         required=True,
     )
 
