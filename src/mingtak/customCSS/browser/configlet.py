@@ -5,10 +5,10 @@ from plone.app.registry.browser.controlpanel import ControlPanelFormWrapper
 from zope import schema
 from plone.z3cform import layout
 from z3c.form import form
-from plone.directives import form as Form
+#from plone.directives import form as Form
+from zope.interface import Interface
 
-
-class ICSSControlPanel(Form.Schema):
+class ICSSControlPanel(Interface):
 
     filePath = schema.TextLine(
         title=_(u'Fill File Path for custom_css'),
